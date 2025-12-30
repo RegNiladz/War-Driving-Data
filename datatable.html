@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Data Table</title>
+
+<style>
+body {
+    background-color: #0b0f14;
+    color: #00ffcc;
+    font-family: Consolas, monospace;
+    margin: 0;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #0e141b;
+    border-bottom: 2px solid #00ffff;
+}
+
+.home-btn {
+    color: #00ffff;
+    text-decoration: none;
+    border: 1px solid #00ffff;
+    padding: 6px 12px;
+    margin-right: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home-btn:hover {
+    background-color: #00ffff;
+    color: #0b0f14;
+}
+
+.header-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* ===== TABLE ===== */
+.table-container {
+    padding: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #111820;
+}
+
+th {
+    color: #00ffff;
+    padding: 8px;
+    border-bottom: 2px solid #00ffff;
+    text-align: left;
+}
+
+td {
+    padding: 6px;
+    border-bottom: 1px solid #1f2a36;
+}
+
+tr:hover {
+    background-color: #14202c;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    margin: 10px;
+    color: #4dd2c2;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+    <a class="home-btn" href="index.html">HOME</a>
+    <div class="header-title">WAR DRIVING SCANS</div>
+</div>
+
+<!-- ===== TABLE ===== -->
+<div class="table-container">
+<table>
+<thead>
+<tr>
+    <th>DATE SCAN</th>
+    <th>INTER ACTIVE MAP</th>
+    <th>CSV RAW DATA</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+    <td>December 27, 2025</td>
+    <td><a href="findings/interactivedata/12272025/12272025.html">December 27, 2025 (MAP)</a></td> 
+    <td><a href="findings/rawcsvdata/12272025.csv">December 27, 2025 (CSV)</a></td>
+</tr>
+<tr>
+    <td>December 27, 2025</td>
+    <td><a href="findings/interactivedata/1227022025/1227022025.html">December 27, 2025 (MAP)</a></td> 
+    <td><a href="findings/rawcsvdata/1227022025.csv">December 27, 2025 (CSV)</a></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="footer">
+Generated from WiGLE War Driving Data
+</div>
+
+</body>
+</html>
